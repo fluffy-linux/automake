@@ -760,7 +760,7 @@ require_tool ()
       if test x"$am_test_prefer_config_shell" = x"yes"; then
         require_xsi "$SHELL"
       else
-        require_xsi "/bin/sh"
+        require_xsi "/sw/bash/bin/bash"
       fi
       ;;
     bzip2)

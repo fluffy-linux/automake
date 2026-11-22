@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -49,7 +49,7 @@ END
 
 mkdir auxdir
 cat > auxdir/ar-lib << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 :> ar-lib-worked
 END
 chmod +x auxdir/ar-lib
@@ -57,7 +57,7 @@ chmod +x auxdir/ar-lib
 # Let's fake microsoft lib.
 mkdir bin
 cat > bin/lib << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo lib command line: $* >&2 # For debugging.
 case " $* " in
   # The '-OUT:' option is used by tests in configure.  So don't create

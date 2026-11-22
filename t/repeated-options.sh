@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2010-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -45,7 +45,7 @@ END
 mkdir sub
 
 cat > foo.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 test -f sub/foo$EXEEXT && test -x sub/foo$EXEEXT
 END
 chmod a+x foo.test

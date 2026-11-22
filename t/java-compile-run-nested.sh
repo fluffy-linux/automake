@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -205,12 +205,12 @@ EXTRA_DIST = $(TESTS)
 END
 
 cat > tests/simple.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 jprog
 END
 
 cat > tests/prefix.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 jprefix=`jprog --print-prefix` || exit 1
 echo "$0: exp prefix: $config_time_prefix"
 echo "$0: got prefix: $jprefix"
@@ -218,7 +218,7 @@ test x"$jprefix" = x"$config_time_prefix"
 END
 
 cat > tests/stdout.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 rc=0
 jprog --hello-stdout >stdout.out 2>stdout.err || { echo \$?=$?; rc=1; }
 sed 's/^/out:/' <stdout.out      # For debugging.
@@ -230,7 +230,7 @@ exit $rc
 END
 
 cat > tests/stderr.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 rc=0
 jprog --hello-stderr >stderr.out 2>stderr.err || { echo \$?=$?; rc=1; }
 sed 's/^/out:/' <stderr.out      # For debugging.
@@ -242,7 +242,7 @@ exit $rc
 END
 
 cat > tests/badarg.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 jprog --bad-argument
 END
 

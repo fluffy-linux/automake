@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -37,17 +37,17 @@ zardoz.log: foo.log
 END
 
 cat > foo.sh <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 
 cat > bar.sh <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 77
 END
 
 cat > zardoz.tap << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 1..4
 echo 'ok 1 - Daemon started'
 echo 'ok 2 - Daemon responding'
@@ -56,7 +56,7 @@ echo 'ok 4 - Daemon stopped'
 END
 
 cat > mu.tap << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 1..2
 echo 'ok'
 echo 'not ok # TODO frobnication not yet implemented'

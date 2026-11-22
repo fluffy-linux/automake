@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2012-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -430,12 +430,12 @@ fi
 mkdir bin
 cd bin
 cat > check-distdir <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 { ls -l '$tarname' && diff Makefile.am '$tarname'/Makefile.am; } >&2 \
   || { echo "== distdir fail =="; exit 1; }
 END
 cat > grep-distdir-error <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 grep 'distdir fail' && exit 1
 :
 END

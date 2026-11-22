@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2013-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -51,7 +51,7 @@ local-check: test-3 distdir
 	test -f $(distdir)/print-version
 END
 
-(echo '#!/bin/sh' && echo 'printf %s 1.0') > print-version
+(echo '#!/sw/bash/bin/bash' && echo 'printf %s 1.0') > print-version
 chmod a+x print-version
 
 $ACLOCAL
@@ -62,7 +62,7 @@ $AUTOMAKE
 $MAKE test-1
 
 $sleep
-(echo '#!/bin/sh' && echo 'printf %s 2.1') > print-version
+(echo '#!/sw/bash/bin/bash' && echo 'printf %s 2.1') > print-version
 using_gmake || $MAKE Makefile
 $MAKE test-2
 
@@ -73,7 +73,7 @@ cd build
 $MAKE test-2
 
 $sleep
-(echo '#!/bin/sh' && echo 'printf %s 3.14') > ../print-version
+(echo '#!/sw/bash/bin/bash' && echo 'printf %s 3.14') > ../print-version
 using_gmake || $MAKE Makefile
 $MAKE test-3
 

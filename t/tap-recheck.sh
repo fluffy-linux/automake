@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -31,7 +31,7 @@ TESTS = a.test b.test c.test d.test
 END
 
 cat > a.test << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo 1..2
 echo ok 1
 echo ok 2
@@ -39,7 +39,7 @@ echo ok 2
 END
 
 cat > b.test << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 : > b.run
 echo 1..2
 echo ok 1
@@ -51,7 +51,7 @@ fi
 END
 
 cat > c.test << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo 1..3
 if test -f c.pass; then
   echo 'ok - c is ok :-)'
@@ -68,7 +68,7 @@ echo 'not ok 3 - blah blah # TODO need better diagnostic'
 END
 
 cat > d.test << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 test -f ./d.count && . ./d.count
 echo 1..${test_count-2}
 echo ok 1 '# SKIP: who cares ...'

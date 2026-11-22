@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -43,7 +43,7 @@ echo 'import sys; sys.exit(0);' > bar.py
 : > baz
 
 cat > wrapper-script <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo "wrapper args: $*"
 END
 chmod a+x wrapper-script

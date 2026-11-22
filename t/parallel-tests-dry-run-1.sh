@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2012-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -71,12 +71,12 @@ $MAKE -n clean
 all_exist $log_files
 
 cat > foo.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 
 cat > bar.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 1
 END
 

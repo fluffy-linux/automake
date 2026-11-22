@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2002-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -31,7 +31,7 @@ SUBDIRS = dir
 TESTS = \
   subrun.sh
 subrun.sh:
-	(echo '#! /bin/sh'; echo 'dir/echo.sh') > $@
+	(echo '#!/sw/bash/bin/bash'; echo 'dir/echo.sh') > $@
 	chmod +x $@
 CLEANFILES = subrun.sh
 END
@@ -39,7 +39,7 @@ END
 cat > dir/Makefile.am << 'END'
 check_SCRIPTS = echo.sh
 echo.sh:
-	(echo '#! /bin/sh'; echo 'echo Hello') > $@
+	(echo '#!/sw/bash/bin/bash'; echo 'echo Hello') > $@
 	chmod +x $@
 CLEANFILES = echo.sh
 END

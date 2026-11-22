@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2008-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -33,7 +33,7 @@ END
 
 mkdir bin
 cat > bin/valac << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 if test "x$1" = x--version; then
   echo "${vala_version-1.2.3}"
 fi
@@ -45,7 +45,7 @@ END
 chmod +x bin/valac
 
 cat > bin/valac.old << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 if test "x$1" = x--version; then
   echo 0.1
 fi

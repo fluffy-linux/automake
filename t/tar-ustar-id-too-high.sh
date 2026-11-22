@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2013-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -46,7 +46,7 @@ $AUTOMAKE
 
 mkdir bin
 cat > bin/id <<'END'
-#!/bin/sh -e
+#!/sw/bash/bin/bash -e
 case "$*" in
   -u) echo "${am_uid-1000}";;
   -g) echo "${am_gid-1000}";;

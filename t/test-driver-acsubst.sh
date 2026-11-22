@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -57,18 +57,18 @@ $AUTOCONF
 ./configure
 
 cat > foo <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo "PASS: from $0"
 exit 1 # exit status should be ignored by the trivial-test-driver.
 END
 
 cat > bar.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 77
 END
 
 cat > baz.sh <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 1
 END
 

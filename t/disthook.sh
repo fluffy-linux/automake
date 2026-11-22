@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2012-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -61,7 +61,7 @@ mkdir doc
 : > doc/HACKING
 echo will be clobbered > write
 cat > execute <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo I run successfully
 END
 

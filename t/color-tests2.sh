@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2007-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -72,22 +72,22 @@ XFAIL_TESTS = xpass xfail
 END
 
 cat >pass <<END
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 
 cat >fail <<END
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 1
 END
 
 cat >skip <<END
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 77
 END
 
 cat >error <<END
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 99
 END
 

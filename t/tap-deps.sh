@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -29,7 +29,7 @@ END
 . tap-setup.sh
 
 cat > a.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 1..2
 echo ok 1
 # Creative quoting below to please maintainer-check.
@@ -39,7 +39,7 @@ echo ok 2
 END
 
 cat > b.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 1..2
 if test -f a.run; then
   echo ok 1
@@ -53,7 +53,7 @@ echo ok 2
 END
 
 cat > c.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 1..1
 test -f b.run || { echo 'Bail out!'; exit 1; }
 echo ok 1

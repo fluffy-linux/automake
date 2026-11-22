@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2004-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -74,7 +74,7 @@ $AUTOMAKE -a
 $MAKE
 
 cat >myyacc.sh <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "$@" >y.tab.c
 END
 cat >mylex.sh <<'END'

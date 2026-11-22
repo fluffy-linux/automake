@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -44,7 +44,7 @@ mkdir sub bin
 PATH=$(pwd)/bin$PATH_SEPARATOR$PATH; export PATH
 
 cat > wrapper.skel <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 set -e
 
 me=`echo "$0" | sed 's,^.*/,,'`
@@ -105,7 +105,7 @@ chmod a+x chk-wrapper bin/noext-wrapper
 rm -f wrapper.skel
 
 cat > 1.chk << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 chmod a+x 1.chk

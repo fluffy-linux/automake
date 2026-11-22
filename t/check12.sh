@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2010-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -35,12 +35,12 @@ END
 ## Simple tests.
 
 cat > a.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo a.test: exit status: ${A_EXIT_STATUS-0}
 exit ${A_EXIT_STATUS-0}
 END
 cat > b.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo b.test: exit status: ${B_EXIT_STATUS-0}
 exit ${B_EXIT_STATUS-0}
 END
@@ -71,14 +71,14 @@ EXTRA_DIST = hammer.test/hammer.exp spanner.test/spanner.exp
 END
 
 cat > hammer << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "Everything looks like a ${NAIL-nail} to me!"
 END
 
 NAIL=nail; export NAIL
 
 cat > spanner << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "I'm a right spanner!"
 END
 chmod +x hammer spanner

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2003-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -23,7 +23,7 @@ required=runtest
 package=$me
 
 cat > $package << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "Ah, we have been expecting you, Mr. Blond."
 END
 chmod +x $package

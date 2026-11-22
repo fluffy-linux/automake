@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2010-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -51,7 +51,7 @@ check-local:
 END
 
 cat > foo.in <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo '@FINGERPRINT@'
 END
 

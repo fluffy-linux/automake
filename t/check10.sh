@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2008-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -30,15 +30,15 @@ XFAIL_TESTS = xfail xpass xfail2 xpass2
 END
 
 cat > pass <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 cat > fail <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 1
 END
 cat > skip <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 77
 END
 chmod a+x pass fail skip

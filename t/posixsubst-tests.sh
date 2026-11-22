@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2010-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -30,7 +30,7 @@ t2 = barx
 t3 = bar2
 
 foo2.test barz:
-	(echo '#!/bin/sh' && echo 'exit 0') > $@ && chmod a+x $@
+	(echo '#!/sw/bash/bin/bash' && echo 'exit 0') > $@ && chmod a+x $@
 CLEANFILES = foo2.test barz # For FreeBSD make.
 
 # Also try an empty match suffix, to ensure that the ':=' in there is
@@ -42,7 +42,7 @@ MOSTLYCLEANFILES = *.out
 END
 
 cat > foo1.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 touch foo1.out
 test x"${TESTSUITE_OK-no}" = x"yes"
 END

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -30,7 +30,7 @@ END
 . tap-setup.sh
 
 cat > all.test <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 1..4
 echo ok 1 >&2
 echo ok 2
@@ -46,7 +46,7 @@ count_test_results total=4 pass=2 fail=0 xpass=0 xfail=1 skip=1 error=0
 grep '^# all\.test: foo foo foo' stdout
 
 cat > all.test <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 1..1
 echo ok 1
 echo 'Bail out!' >&2

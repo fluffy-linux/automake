@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -24,7 +24,7 @@
 echo TESTS = > Makefile.am
 for st in 1 2 77 99; do
   unindent > exit${st}.test <<END
-    #!/bin/sh
+    #!/sw/bash/bin/bash
     echo 1..1
     echo ok 1
     exit $st

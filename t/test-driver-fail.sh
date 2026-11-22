@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -34,7 +34,7 @@ TESTS = foo.test
 END
 
 cat > foo.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 
@@ -51,7 +51,7 @@ test ! -e test-suite.log
 # The testsuite driver exists and create the test log files, but fails.
 
 cat > oops <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 : > foo.log
 echo 'Oops, I fail!' >&2
 exit 1

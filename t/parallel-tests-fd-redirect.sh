@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -37,13 +37,13 @@ $AUTOCONF
 $AUTOMAKE -a
 
 cat > foo.sh <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo " foofoofoo" >&9
 END
 chmod a+x foo.sh
 
 cat > bar <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo " barbarbar" >&9
 END
 

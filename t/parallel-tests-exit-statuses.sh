@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -40,7 +40,7 @@ TESTS = 0 77 99 $failure_statuses
 END
 
 cat > do-exit <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo "$0: $1"
 case $1 in
   [0-9]|[0-9][0-9]|[0-9][0-9][0-9]) st=$1;;

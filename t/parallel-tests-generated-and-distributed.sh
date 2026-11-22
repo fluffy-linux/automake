@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2009-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -44,7 +44,7 @@ DISTCLEANFILES = foo.test
 END
 
 cat > foo.in <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "this is $0"
 exit 0
 END

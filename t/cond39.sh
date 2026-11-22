@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2008-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -65,7 +65,7 @@ int main () { return 42; }
 END
 
 cat >prog1.in <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 bindir='@bindir@'
 echo "hi, this is $0, and bindir is $bindir"
 END

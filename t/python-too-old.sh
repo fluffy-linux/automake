@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2003-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -50,7 +50,7 @@ py_too_old python
 
 mkdir bin
 cat > bin/my-python << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exec $saved_PYTHON ${1+"$@"}
 END
 chmod a+x bin/my-python

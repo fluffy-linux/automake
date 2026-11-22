@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2002-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -67,14 +67,14 @@ END
 mkdir sub
 
 cat >sub/scriptok.sh <<EOF
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo "Which version? Which usage?"
 EOF
 
 # Not only does this script not support --help/--version, but
 # it will also hang when run without input.
 cat >sub/scriptnok.sh <<EOF
-#!/bin/sh
+#!/sw/bash/bin/bash
 cat
 EOF
 

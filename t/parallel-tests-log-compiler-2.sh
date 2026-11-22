@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2009-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -47,7 +47,7 @@ END
 mkdir sub
 
 cat >chk-compiler <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo $0 "$@"
 shift
 shift
@@ -59,7 +59,7 @@ cp chk-compiler test-compiler
 cp chk-compiler noext-compiler
 
 cat >foo.chk << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 chmod a+x foo.chk

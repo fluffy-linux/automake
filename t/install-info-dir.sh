@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -114,7 +114,7 @@ rm -rf $instdir $destdir
 # The 'install-info' target doesn't fail if the 'install-info'
 # program is not available.
 cat > bin/install-info <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo error from install-info >&2
 exit 127
 END
@@ -130,7 +130,7 @@ if test $have_installinfo = yes; then
   # The 'install-info' target doesn't try to guess whether the 'install-info'
   # is the GNU or debian version.
   unindent > bin/install-info <<'END'
-    #!/bin/sh
+    #!/sw/bash/bin/bash
     set -e; set -u;
     for fd in 1 2; do
       for str in dpkg debian Debian; do

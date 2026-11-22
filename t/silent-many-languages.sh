@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2009-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -106,7 +106,7 @@ case " $CXX " in
   *'CC '*)
     AC_MSG_WARN([the C++ compiler '$CXX' name ends with 'CC'])
     AC_MSG_WARN([it will be wrapped with the custom script 'am--cxx'])
-    echo '#!/bin/sh' > bin/am--cxx
+    echo '#!/sw/bash/bin/bash' > bin/am--cxx
     echo 'PATH=$saved_PATH; export PATH' >> bin/am--cxx
     echo "case \$# in" >> bin/am--cxx
     echo "  0) exec $CXX ;;" >> bin/am--cxx

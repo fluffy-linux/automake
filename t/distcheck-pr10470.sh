@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2012-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -37,7 +37,7 @@ EXTRA_DIST= foo.test
 END
 
 cat > foo.test <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 sleep '4' &
 exit 0
 END

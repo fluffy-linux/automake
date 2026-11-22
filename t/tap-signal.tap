@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -48,7 +48,7 @@ for sig in $all_signals; do
   # to themselves consistently).  The shebang is dummy here, as we prefer
   # to rely on the definition of TEST_LOG_COMPILER instead.
   unindent > signal-$sig.test <<END
-    #! /usr/bin/env perl
+    #!/sw/perl/bin/perl
     # We need autoflush to avoid losing output, which could cause spurious
     # "no test plan seen" in the TAP driver.
     BEGIN { $| = 1 }

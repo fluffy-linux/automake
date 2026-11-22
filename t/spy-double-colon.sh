@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2003-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -70,6 +70,7 @@
 . test-init.sh
 
 cat >Makefile <<\EOF
+SHELL = /sw/bash/bin/bash
 a :: b
 	echo rule1 >> $@
 a :: c

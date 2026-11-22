@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2014-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -39,7 +39,7 @@ END
 
 
 cat > gen-testdata.sh <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 printf 'testdata = \\\n'
 sed 's/$/ \\/'
 echo '$(empty_string)'

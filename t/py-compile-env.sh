@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -22,7 +22,7 @@ cp "$am_scriptdir/py-compile" . \
   || fatal_ "failed to fetch auxiliary script py-compile"
 
 cat > my-py <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 2
 : > my-py.run
 END

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -28,7 +28,7 @@ END
 . tap-setup.sh
 
 cat > all.test <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 1..2
 echo 'not ok' >&2
 echo 'not ok 1 # TODO' >&2

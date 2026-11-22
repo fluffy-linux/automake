@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -40,7 +40,7 @@ EXTRA_DIST = $(TESTS) tap-driver
 END
 
 cat > 1.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo 1..2
 echo ok 1 - mu
 if test -f not-skip; then
@@ -51,7 +51,7 @@ fi
 END
 
 cat > 2.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo 1..3
 echo "ok"
 echo "not ok # TODO not implemented"
@@ -59,7 +59,7 @@ echo "ok 3"
 END
 
 cat > 3.test <<END
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo 1..1
 echo ok - blah blah blah
 echo '# Some diagnostic'

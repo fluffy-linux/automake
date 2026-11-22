@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -46,7 +46,7 @@ TESTS = all.test
 END
 
 cat > all.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 cat results.txt || { echo ERROR: weird; exit 99; }
 END
 chmod a+x all.test

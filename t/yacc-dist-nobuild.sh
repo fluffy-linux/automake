@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -61,7 +61,7 @@ chmod -R a-w $distdir
 
 mkdir bin
 cat > bin/yacc <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo "$0 invoked, shouldn't happen!" >&2
 exit 1
 END

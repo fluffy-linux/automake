@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2012-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -46,7 +46,7 @@ TESTS = foo.test bar.sh mu
 XFAIL_TESTS = bar.sh
 check_SCRIPTS = bla
 bla:
-	echo '#!/bin/sh' > $@-t
+	echo '#!/sw/bash/bin/bash' > $@-t
 	echo 'echo Blah Blah Blah' >> $@-t
 	chmod a+x,a-w $@-t
 	mv -f $@-t $@
@@ -72,26 +72,26 @@ EXTRA_DIST = $(TESTS)
 END
 
 cat > foo.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 ./bla
 exit 77
 END
 
 cat > bar.sh <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "this is $0"
 exit 1
 END
 
 cat > mu <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 set -x
 test -f sub/more/test.log
 test -f sub/more/sh.log
 END
 
 cat > sub/more/test.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo "this is $0"
 set -x
 test -f sh.log
@@ -100,7 +100,7 @@ exit 77
 END
 
 cat > sub/more/sh.sh << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 set -x
 test ! -f test.log
 test -f x.txt
@@ -108,7 +108,7 @@ END
 
 
 cat > sub/more/mu << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 99
 END
 

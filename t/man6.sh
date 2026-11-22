@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2010-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -41,7 +41,7 @@ AC_OUTPUT
 END
 
 cat > foobar <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 while test $# -gt 0; do
   case $1 in
     -h | --help) echo "usage: $0 [OPTIONS]..."; exit 0;;

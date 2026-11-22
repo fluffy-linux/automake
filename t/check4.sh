@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2005-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -34,12 +34,12 @@ END
 echo TESTS = fail.sh >dir/Makefile.am
 
 cat >ok.sh <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 :
 END
 
 cat >dir/fail.sh <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 1
 END
 

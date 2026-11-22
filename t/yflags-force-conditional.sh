@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -28,7 +28,7 @@ END
 
 mkdir bin
 cat > bin/fake-yacc <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo "/* $* */" > y.tab.c
 echo 'extern int dummy;' >> y.tab.c
 END

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -45,7 +45,7 @@ EXTRA_DIST = checkstrip-driver
 END
 
 cat > checkstrip-driver <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 set -e
 while test $# -gt 0; do
   case $1 in

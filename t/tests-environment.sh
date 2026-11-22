@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -29,7 +29,7 @@ EXTRA_DIST = $(TESTS)
 END
 
 cat > foo.test << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 test x"$FOO" = x"ok"
 END
 chmod a+x foo.test

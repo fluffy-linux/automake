@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -29,25 +29,25 @@ END
 . tap-setup.sh
 
 cat > exit.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 'Bail out!'
 exit 1
 END
 
 cat > exit127.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 'Bail out!'
 exit 127
 END
 
 cat > sighup.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 'Bail out!'
 kill -1 $$
 END
 
 cat > sigterm.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 'Bail out!'
 kill -15 $$
 END

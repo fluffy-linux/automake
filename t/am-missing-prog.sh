@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2003-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -28,17 +28,17 @@ END
 
 mkdir bin
 cat > bin/am-exit-63 <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo "Oops, I'm too old"
 exit 63
 END
 cat > bin/am-overridden <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo "Hey, I'm OK!"
 exit 0
 END
 cat > bin/my-command <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo SNAFU
 exit 0
 END

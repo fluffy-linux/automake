@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2001-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -34,7 +34,7 @@ BUILD_helldl =
 bin_SCRIPTS = helldl
 helldl$(EXEEXT):
 	rm -f $@
-	echo '#! /bin/sh' > $@
+	echo '#!/sw/bash/bin/bash' > $@
 	echo '-dlopen is unsupported' >> $@
 	chmod +x $@
 endif
