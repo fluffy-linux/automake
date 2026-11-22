@@ -12,6 +12,7 @@
 AC_DEFUN([AM_MAKE_INCLUDE],
 [am_make=${MAKE-make}
 cat > confinc << 'END'
+SHELL = /sw/bash/bin/bash
 am__doit:
 	@echo this is the am__doit target
 .PHONY: am__doit
