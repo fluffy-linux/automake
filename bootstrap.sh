@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 
 # This script helps bootstrap automake, when checked out from git.
 #
@@ -45,7 +45,7 @@ RELEASE_YEAR=2014
 if test -n "$DJDIR"; then
   BOOTSTRAP_SHELL=/dev/env/DJDIR/bin/bash.exe
 else
-  BOOTSTRAP_SHELL=/bin/sh
+  BOOTSTRAP_SHELL=/sw/bash/bin/bash
 fi
 
 # Read the rule for calculating APIVERSION and execute it.

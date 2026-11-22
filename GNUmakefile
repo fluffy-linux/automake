@@ -33,7 +33,7 @@ else # ! bootstrap in $(MAKECMDGOALS)
 other-targets := $(filter-out bootstrap,$(MAKECMDGOALS))
 config-status := $(wildcard ./config.status)
 
-BOOTSTRAP_SHELL ?= /bin/sh
+BOOTSTRAP_SHELL ?= /sw/bash/bin/bash
 export BOOTSTRAP_SHELL
 
 # Allow the user (or more likely the developer) to ask for a bootstrap
