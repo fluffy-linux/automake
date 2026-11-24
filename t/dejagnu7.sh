@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2003-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -24,7 +24,7 @@ runtest --help | grep '.*--status' \
   || skip_ "dejagnu lacks support for '--status'"
 
 cat > failtcl << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo whatever
 END
 chmod +x failtcl

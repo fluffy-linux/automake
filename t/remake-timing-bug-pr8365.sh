@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -67,7 +67,7 @@ $stat config.status Makefile configure.ac
 # need the following hackish wrappers.
 
 cat > aclocal-wrap <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 set -ex
 # aclocal shouldn't use our autoconf wrapper when extracting
 # the races from configure.ac.
@@ -78,7 +78,7 @@ $stat aclocal.m4
 END
 
 cat > automake-wrap <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 set -ex
 # automake shouldn't use our autoconf wrapper when extracting
 # the races from configure.ac.
@@ -89,7 +89,7 @@ $stat Makefile.in
 END
 
 cat > autoconf-wrap <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 set -ex
 $AUTOCONF "\$@"
 touch -r config.status configure

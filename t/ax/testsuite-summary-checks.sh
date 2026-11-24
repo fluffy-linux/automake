@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -51,7 +51,7 @@ $(TESTS):
 END
 
 cat > log-compiler <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 case "$1" in
   pass*|*/pass*|xpass*|*/xpass*) exit 0;;
   fail*|*/fail*|xfail*|*/xfail*) exit 1;;

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -29,18 +29,18 @@ EXTRA_DIST = $(TESTS)
 END
 
 cat > pass.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 
 cat > skip.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "% test skipped %"
 exit 77
 END
 
 cat > xfail.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "# expected failure #"
 exit 1
 END

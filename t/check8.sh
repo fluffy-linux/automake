@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2008-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -35,11 +35,11 @@ END
 mkdir sub
 
 cat > foo <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 test -f "$srcdir/Makefile.am"
 END
 cat > sub/foo <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 test -f "$srcdir/Makefile.am"
 END
 chmod a+x foo sub/foo

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2003-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -20,7 +20,7 @@ required=runtest
 . test-init.sh
 
 cat > faildeja << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo whatever
 END
 chmod +x faildeja

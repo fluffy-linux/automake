@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2009-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -41,7 +41,7 @@ for i in 1 2 3 4 5 6 7 8; do
   echo "scripts += foo$i.test" >> Makefile.am
   echo "programs += foo$i.prog" >> Makefile.am
   unindent >foo$i.test <<'END'
-    #! /bin/sh
+    #!/sw/bash/bin/bash
     echo "this is $0"
     exit 0
 END

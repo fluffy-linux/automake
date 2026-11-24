@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -33,7 +33,7 @@ AC_OUTPUT
 END
 
 cat > am--tar <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo $1 > am--tar-has-run
 shift
 exec tar "$@"

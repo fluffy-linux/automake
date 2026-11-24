@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2004-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -38,7 +38,7 @@ run_cmd ./missing b7cb8259 --grep && exit 1
 if test x"$am_test_prefer_config_shell" != x"yes"; then
   # The /bin/sh from Solaris 10 is a spectacular failure.  After a failure
   # due to a "command not found", it sets '$?' to '1'.
-  if (st=0; /bin/sh -c 'no--such--command' || st=$?; test $st -eq 127); then
+  if (st=0; /sw/bash/bin/bash -c 'no--such--command' || st=$?; test $st -eq 127); then
     grep 'WARNING:.*missing on your system' stderr
   fi
 fi

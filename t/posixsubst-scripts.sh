@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2010-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -36,7 +36,7 @@ t2 = bar1x bar2
 t3 = quu-baz
 
 bar1 bar2:
-	(echo '#!/bin/sh' && echo 'exit 0') > $@
+	(echo '#!/sw/bash/bin/bash' && echo 'exit 0') > $@
 quux.pl:
 	(echo '#!/bin/perl' && echo '1;') > $@
 CLEANFILES = bar1 bar2 quux.pl
@@ -79,7 +79,7 @@ installcheck-local:
 END
 
 cat > foo1.sh <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 cp foo1.sh foo2.sh

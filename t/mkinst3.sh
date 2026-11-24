@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2005-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -38,7 +38,7 @@ rm -rf '~a b'
 
 mkdir bin
 cat >bin/mkdir <<'EOF'
-#!/bin/sh
+#!/sw/bash/bin/bash
 for arg
 do
   case $arg in

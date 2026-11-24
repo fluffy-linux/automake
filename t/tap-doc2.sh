@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -38,7 +38,7 @@ AC_OUTPUT
 END
 
 cat > foo.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 1..4 # Number of tests to be executed.
 echo 'ok 1 - Swallows fly'
 echo 'not ok 2 - Caterpillars fly # TODO metamorphosis in progress'
@@ -48,7 +48,7 @@ echo 'ok 4 - Flies fly too :-)'
 END
 
 cat > bar.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 1..3
 echo 'not ok 1 - Bummer, this test has failed.'
 echo 'ok 2 - This passed though.'
@@ -57,7 +57,7 @@ echo 'ok 3 - This will not be seen.'
 END
 
 cat > baz.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 1..1
 echo ok 1
 # Exit with error, even if all the tests have been successful.
@@ -125,7 +125,7 @@ diff exp got
 
 # Sanity check the distribution.
 cat > bar.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo 1..1
 echo ok 1
 END

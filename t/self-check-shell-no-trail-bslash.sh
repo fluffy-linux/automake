@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2012-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -24,6 +24,7 @@ am_create_testdir=empty
 . test-init.sh
 
 cat >> Makefile <<'END'
+SHELL = /sw/bash/bin/bash
 am__backslash = \\ # foo
 .PHONY: good bad
 good:

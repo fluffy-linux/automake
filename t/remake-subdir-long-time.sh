@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -43,7 +43,7 @@ ocwd=$(pwd) || fatal_ "cannot get current working directory"
 mkdir bin
 
 cat > bin/automake <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 set -e
 PATH='$PATH'; export PATH
 sentinel='$ocwd/automake-has-run'
@@ -59,7 +59,7 @@ END
 chmod a+x bin/automake
 
 cat > bin/aclocal <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 set -e
 PATH='$PATH'; export PATH
 sentinel='$ocwd/aclocal-has-run'

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -50,7 +50,7 @@ ocwd=$(pwd) || fatal_ "cannot get current working directory"
 # Help to ensure cp won't see the same file twice.
 mkdir bin
 cat > bin/cp <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 PATH='$PATH'; export PATH
 
 case " \$* " in

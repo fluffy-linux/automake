@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2009-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -28,14 +28,14 @@ TESTS = foo.test bar.test
 END
 
 cat > foo.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo :test-result:XFAIL
 echo :test-result: SKIP
 echo :test-result:ERROR
 exit 0
 END
 cat > bar.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo :test-result: ERROR
 echo :test-result:FAIL
 echo :test-result: XPASS

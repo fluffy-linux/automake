@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -36,14 +36,14 @@ TESTS = a.test b.test c.test
 END
 
 cat > a.test << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo PASS: 1
 echo PASS: 2
 : > a.run
 END
 
 cat > b.test << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo SKIP: b0
 if test -f b.ok; then
   echo XFAIL: b1
@@ -54,7 +54,7 @@ fi
 END
 
 cat > c.test << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 if test -f c.err; then
   echo ERROR: xxx
 elif test -f c.ok; then

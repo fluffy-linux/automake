@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2013-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -180,7 +180,7 @@ CLEANFILES += %D%/goodbye.sh
 END
 
 cat > tests/hello.sh <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 set -x -e
 if test "$WE_ARE_CROSS_COMPILING" = yes; then
   echo Skipping: cannot run in cross-compilation mode
@@ -192,7 +192,7 @@ fi
 END
 
 cat > tests/built.sh <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 set -x
 test -n "$PROGDIR" || exit 99
 test -f "$PROGDIR/hello$EXEEXT" || exit 1

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2012-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -96,7 +96,7 @@ EXTRA_DIST = $(TESTS)
 END
 
 cat > tests/test.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 set -x; set -e;
 ../src/zardoz
 test "`../src/zardoz`" = 'Foo, Bar!'

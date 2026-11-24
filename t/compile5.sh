@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2010-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -23,7 +23,7 @@ get_shell_script compile
 
 # Use a dummy cl, since cl isn't readily available on all systems
 cat >cl <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "$@"
 END
 

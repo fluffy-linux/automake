@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -29,14 +29,14 @@ TESTS = pass.test pass2.test skip.test skip2.test fail.test
 END
 
 cat > pass.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 
 cp pass.test pass2.test
 
 cat > skip.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "% skipped test %"
 exit 77
 END
@@ -44,7 +44,7 @@ END
 cp skip.test skip2.test
 
 cat > fail.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 1
 END
 

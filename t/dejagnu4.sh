@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2003-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -27,13 +27,13 @@ required=runtest
 . test-init.sh
 
 cat > hammer << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "Everything looks like a nail to me!"
 END
 chmod +x hammer
 
 cat > spanner << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "I'm a right spanner!"
 END
 chmod +x spanner

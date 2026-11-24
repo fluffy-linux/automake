@@ -94,7 +94,7 @@ sub write_wrapper_script ($$$)
 {
   my ($file_handle, $wrapped_test, $shell_setup_code, $creator_name) = @_;
   print $file_handle unindent <<EOF;
-    #! /bin/sh
+    #!/sw/bash/bin/bash
     # This file has been automatically generated.  DO NOT EDIT BY HAND!
     . test-lib.sh
     $shell_setup_code
@@ -368,7 +368,7 @@ foreach my $lt (TRUE, FALSE)
           {
             my $file_handle = shift;
             print $file_handle unindent <<EOF;
-              #! /bin/sh
+              #!/sw/bash/bin/bash
               # Automatically generated test.  DO NOT EDIT BY HAND!
               @vars_init
               required="@required"

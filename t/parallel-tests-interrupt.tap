@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -39,12 +39,12 @@ END
 # of pain with background processes and related synchronization issues.
 
 cat - "$am_scriptdir"/test-driver > test-driver <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo $$ > pid
 END
 
 cat > foo.test << 'END'
-#!/bin/sh -e
+#!/sw/bash/bin/bash -e
 
 # We expect the test driver to be terminated by a signal, and so
 # to exit with non-zero status, thus causing "make check" to fail.

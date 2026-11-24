@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2002-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -28,7 +28,7 @@ bin_SCRIPTS = foo
 END
 
 cat > foo << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo Maude
 END
 chmod +x foo

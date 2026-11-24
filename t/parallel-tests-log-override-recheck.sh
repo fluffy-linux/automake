@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -28,19 +28,19 @@ TESTS = foofoo.test barbar.test bazbaz.test
 END
 
 cat > foofoo.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "this is $0"
 exit 0
 END
 
 cat > barbar.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "this is $0"
 exit 99
 END
 
 cat > bazbaz.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "this is $0"
 exit ${BAZ_EXIT_STATUS-1}
 END

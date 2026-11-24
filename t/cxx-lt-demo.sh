@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2012-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -77,7 +77,7 @@ DISTCLEANFILES = $(BUILT_SOURCES)
 END
 
 cat > try.in << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 set -e
 if test x"$host_alias" = x || test x"$build_alias" = x"$host_alias"; then
   ./src/zardoz

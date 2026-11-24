@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -45,13 +45,13 @@ $(TESTS):
 END
 
 cat > log-compiler << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "$0: $*"
 test x"$1$2$3$4$5" = x"12345"
 END
 
 cat > test-log-compiler << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "$0: $*"
 test x"$1$2$3$4$5" = x"25143"
 END

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -46,18 +46,18 @@ END
 mkdir sub a a/b
 
 cat > pass.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 cp pass.test sub/xpass.test
 
 cat > fail.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 1
 END
 
 cat > xfail.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 # The sleep should ensure expected execution order of tests
 # even when make is run in parallel mode.
 # Creative quoting below to please maintainer-check.
@@ -66,13 +66,13 @@ exit 1
 END
 
 cat > error.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 99
 END
 cp error.test sub/error2.test
 
 cat > a/b/skip.test << 'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 77
 END
 

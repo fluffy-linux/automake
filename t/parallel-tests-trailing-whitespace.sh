@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2009-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -30,7 +30,7 @@ BAR =
 END
 
 cat >foo <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 

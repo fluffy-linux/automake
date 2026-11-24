@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2006-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -30,7 +30,7 @@ XFAIL_TESTS = a	b	c
 END
 
 cat >>a <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 1
 END
 

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2009-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -33,18 +33,18 @@ bla:
 END
 
 cat > foo.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "this is $0"
 test -f bla || exit 1
 exit 0
 END
 cat > bar.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "this is $0"
 exit 99
 END
 cat > baz.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo "this is $0"
 exit 1
 END

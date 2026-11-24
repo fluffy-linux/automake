@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -30,7 +30,7 @@ exit_statuses='1 2 77 99'
 
 for e in $exit_statuses; do
   unindent > exit-$e.test <<END
-    #!/bin/sh
+    #!/sw/bash/bin/bash
     echo 1..1
     echo ok 1
     exit $e

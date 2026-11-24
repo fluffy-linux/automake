@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2002-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -32,7 +32,7 @@ BUILT_SOURCES = command1.inc
 SUBDIRS = dir
 TESTS = subrun.sh
 subrun.sh:
-	(echo '#! /bin/sh'; cat command1.inc) > $@
+	(echo '#!/sw/bash/bin/bash'; cat command1.inc) > $@
 	chmod +x $@
 command1.inc:
 	echo 'dir/echo.sh' > $@
@@ -46,7 +46,7 @@ echo.sh:
 ## The next line ensures that command1.inc has been built before
 ## recursing into the subdir.
 	test -f ../command1.inc
-	(echo '#! /bin/sh'; cat command2.inc) > $@
+	(echo '#!/sw/bash/bin/bash'; cat command2.inc) > $@
 	chmod +x $@
 command2.inc:
 	echo 'echo Hello' > $@

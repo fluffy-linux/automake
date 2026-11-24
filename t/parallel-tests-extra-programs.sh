@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -74,7 +74,7 @@ baz.log: y$(EXEEXT)
 END
 
 cat > baz.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 $srcdir/y "$@" | sed 's/.*/&ep&ep&ep/'
 END
 chmod a+x baz.test

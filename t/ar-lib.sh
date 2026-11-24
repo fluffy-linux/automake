@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2010-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -24,7 +24,7 @@ get_shell_script ar-lib
 
 # Use a dummy lib, since lib isn't readily available on all systems.
 cat >lib <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 if test x"$2" = x-LIST && test x"$3" = xfake.lib; then
   echo fake.obj
 elif test x"$2" = x-LIST && test x"$3" = xfake2.lib; then

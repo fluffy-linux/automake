@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -36,7 +36,7 @@ END
 # for better coverage.
 
 cat >foo.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 set -e
 echo " " $0: foofoofoo >&8
 echo " " $0: barbarbar >&9

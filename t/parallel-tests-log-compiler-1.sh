@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2009-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -57,7 +57,7 @@ END
 mkdir sub
 
 cat > chk-compiler <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 test x"$1" = x"--chk" || {
   echo "$0: invalid command line: $*" >&2
   exit 1
@@ -72,7 +72,7 @@ mkdir bin
 PATH=$(pwd)/bin$PATH_SEPARATOR$PATH; export PATH
 
 cat > bin/t-compiler <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 if test x"$1,$2" != x"--am-t,--t"; then
   echo "$0: invalid command line: $*" >&2
   exit 1
@@ -86,7 +86,7 @@ sed 's/--am-t,--t/-a,-b/' bin/t-compiler > noext-compiler
 chmod a+x chk-compiler chk-compiler test-compiler bin/t-compiler noext-compiler
 
 cat >foo.chk << 'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 chmod a+x foo.chk

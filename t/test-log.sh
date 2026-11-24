@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -39,42 +39,42 @@ cmarker=::: # comment marker
 pmarker=%%% # plain maker
 
 cat > pass.test <<END
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo   "$pmarker pass $pmarker" >&2
 echo "# $cmarker pass $cmarker" >&2
 exit 0
 END
 
 cat > skip.test <<END
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo   "$pmarker skip $pmarker"
 echo "# $cmarker skip $cmarker"
 exit 77
 END
 
 cat > xfail.test <<END
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo   "$pmarker xfail $pmarker" >&2
 echo "# $cmarker xfail $cmarker" >&2
 exit 1
 END
 
 cat > fail.test <<END
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo   "$pmarker fail $pmarker"
 echo "# $cmarker fail $cmarker"
 exit 1
 END
 
 cat > xpass.test <<END
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo   "$pmarker xpass $pmarker" >&2
 echo "# $cmarker xpass $cmarker" >&2
 exit 0
 END
 
 cat > error.test <<END
-#! /bin/sh
+#!/sw/bash/bin/bash
 echo   "$pmarker error $pmarker"
 echo "# $cmarker error $cmarker"
 exit 99

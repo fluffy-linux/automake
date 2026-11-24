@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2009-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -28,7 +28,7 @@ TESTS = skip skip2
 END
 
 cat > skip <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 77
 END
 chmod a+x skip

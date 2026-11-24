@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -58,7 +58,7 @@ END
     EXTRA_DIST = \$(TESTS)
 END
   unindent > tests/foo.test << 'END'
-    #!/bin/sh
+    #!/sw/bash/bin/bash
     exit 0
 END
   chmod a+x tests/foo.test

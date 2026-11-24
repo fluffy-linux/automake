@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2002-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -56,7 +56,7 @@ END
 mkdir sub
 
 cat >nok.sh <<EOF
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo "Which version? Which usage?"
 exit 1
 EOF

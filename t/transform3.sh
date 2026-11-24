@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2012-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -68,7 +68,7 @@ END
 echo 'To be or not to be ...' > bar.txt
 
 cat > foo <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 cp foo mu

@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2008-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -44,7 +44,7 @@ nPATH=$(pwd)/x-bin$PATH_SEPARATOR$PATH; export nPATH
 mkdir x-bin
 
 sed "s|@limit@|$limit|g" >x-bin/my-install <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 limit=@limit@
 PATH=$oPATH; export PATH
 if test -z "$orig_INSTALL"; then
@@ -62,7 +62,7 @@ END
 
 # Creative quoting in the next line to please maintainer-check.
 sed "s|@limit@|$limit|g" >x-bin/'rm' <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 limit=@limit@
 PATH=$oPATH; export PATH
 RM='rm -f'

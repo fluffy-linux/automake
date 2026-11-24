@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -25,13 +25,13 @@ echo TESTS = one.test two.test > Makefile.am
 . tap-setup.sh
 
 cat > one.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo '1..0 # SKIP'
 exit 1
 END
 
 cat > two.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo '1..0'
 exit 22
 END

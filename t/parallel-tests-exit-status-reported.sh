@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2013-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -28,7 +28,7 @@ echo TESTS = t00.test >> Makefile.am
 for s in 0 1 2 3 5 77 78 99 100 126 127; do
   echo "TESTS += t${s}.test" >> Makefile.am
   cat > t${s}.test <<END
-#!/bin/sh
+#!/sw/bash/bin/bash
 printf "%s\\n%s\\n" 'random' 'will exit with status $s'
 exit $s
 END

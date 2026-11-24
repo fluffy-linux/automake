@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -52,7 +52,7 @@ EOF
 cp foo.c bar.c
 
 cat >mymake <<'EOF'
-#! /bin/sh
+#!/sw/bash/bin/bash
 makerules=
 
 case $1 in
@@ -91,6 +91,7 @@ export MAKE mymake_MAKE
 # As a sanity check, verify that 'mymake' rejects Makefiles that
 # use nested variables.
 cat > Makefile <<'END'
+SHELL = /sw/bash/bin/bash
 a = $(b$(c))
 all:
 	touch bar

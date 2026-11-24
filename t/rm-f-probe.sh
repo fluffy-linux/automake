@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2013-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -28,7 +28,7 @@ $AUTOMAKE
 
 mkdir bin
 cat > bin/rm <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 set -e; set -u;
 PATH=$original_PATH; export PATH
 rm_opts=

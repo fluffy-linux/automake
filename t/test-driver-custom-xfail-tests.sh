@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -66,12 +66,12 @@ TESTS = pass.test x1.test x2.test x3.test x4.test x5.test x6.test
 END
 
 cat > pass.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 
 cat > xfail.test <<'END'
-#!/bin/sh
+#!/sw/bash/bin/bash
 exit 1
 END
 
@@ -86,7 +86,7 @@ for i in 1 2 3 4 5 6; do
 done
 
 cat > td <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 set -e; set -u
 test_name=INVALID
 log_file=/dev/null

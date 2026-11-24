@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2011-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -46,7 +46,7 @@ EXTRA_DIST = baz.tap
 
 check_SCRIPTS = bar.sh
 bar.sh: Makefile
-	echo '#!/bin/sh' > $@-t
+	echo '#!/sw/bash/bin/bash' > $@-t
 	echo 'echo 1..1' >> $@-t
 	echo 'echo "not ok 1 # TODO"' >> $@-t
 	chmod a-w $@-t && mv -f $@-t $@

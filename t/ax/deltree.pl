@@ -1,4 +1,4 @@
-#!/usr/bin/env perl
+#!/sw/perl/bin/perl
 # deltree: recursively removes file and directory,
 # trying to handle permissions and other complications.
 

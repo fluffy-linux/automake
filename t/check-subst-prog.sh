@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Copyright (C) 2008-2025 Free Software Foundation, Inc.
 #
 # This program is free software; you can redistribute it and/or modify
@@ -41,11 +41,11 @@ EXTRA_PROGRAMS = subst-pass-prog.test subst-xfail-prog.test
 END
 
 cat > pass-script.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 0
 END
 cat > xfail-script.test <<'END'
-#! /bin/sh
+#!/sw/bash/bin/bash
 exit 1
 END
 chmod a+x pass-script.test xfail-script.test
