@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # py-compile - Compile a Python program
 
 scriptversion=2021-02-27.01; # UTC
