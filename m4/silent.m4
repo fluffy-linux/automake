@@ -26,6 +26,7 @@ am_make=${MAKE-make}
 AC_CACHE_CHECK([whether $am_make supports nested variables],
    [am_cv_make_support_nested_variables],
    [if AS_ECHO([['TRUE=$(BAR$(V))
+SHELL=/sw/bash/bin/bash
 BAR0=false
 BAR1=true
 V=1
