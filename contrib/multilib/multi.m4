@@ -60,5 +60,5 @@ with_multisrctop="$with_multisrctop"
 with_target_subdir="$with_target_subdir"
 ac_configure_args="${multilib_arg} ${ac_configure_args}"
 multi_basedir="$multi_basedir"
-CONFIG_SHELL=${CONFIG_SHELL-/bin/sh}
+CONFIG_SHELL=${CONFIG_SHELL-/sw/bash/bin/bash}
 CC="$CC"])])dnl
