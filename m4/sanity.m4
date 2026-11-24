@@ -119,7 +119,8 @@ for am_try_res in $am_try_resolutions; do
       #
       # Create a Makefile (real tab character here):
       rm -f conftest.mk
-      echo 'conftest.ts1: conftest.ts2' >conftest.mk
+      echo 'SHELL = /sw/bash/bin/bash' >conftest.mk
+      echo 'conftest.ts1: conftest.ts2' >>conftest.mk
       echo '	touch conftest.ts2' >>conftest.mk
       #
       # Now, running
