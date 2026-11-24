@@ -13,6 +13,7 @@
 AC_DEFUN([AM_MAKE_INCLUDE],
 [AC_MSG_CHECKING([whether ${MAKE-make} supports the include directive])
 cat > confinc.mk << 'END'
+SHELL = /sw/bash/bin/bash
 am__doit:
 	@echo this is the am__doit target >confinc.out
 .PHONY: am__doit
